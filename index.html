@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">  
+    <title>Reserva Laboratorio 🏢</title>
+</head>
+<body>
+    <div class="header__titulo">
+        <h1>Registro de Reserva 🏢</h1>
+    </div>
+
+    <seccion class="container">
+        <div class="container__titulo">
+            Datos para Reservar Laboratorio
+        </div>
+        
+        <form class="formulario__contenedor">
+           <div class="max--group">
+                <div class="form-group">
+                    <p>Nombre del docente</p>
+                    <select name="nombres" class="nombre__option">
+                        <option disabled>Seleciona una opción</option>
+                        <option value="name4" disabled selected value> Milena Garcia</option>
+                    </select>
+                </div>
+               
+                <div class="form-group">
+                    <p>Asignatura</p>
+                    <select name="nombres" class="nombre__option">
+                        <option disabled selected value>Tus asiganturas/Laboratorios</option>
+                        <option value="asignatura1"disabled>Informatica</option>
+                        <option value="asignatura2"selected>Anatomia/ Química</option>
+                        <option value="asignatura3"disabled>Mecánica de suelos</option>
+                        <option value="asignatura4"disabled>Mecanica Automotriz</option>
+                        <option value="asignatura4" disabled>Física</option>
+                    </select>
+                </div>
+           </div>
+
+            <div class="form-group-modif">
+                <div class="form-group">
+                    <p>Paralelos</p>
+                    <label>
+                        <input type="radio"class="Selecion"type="text" checked> Paralelo A
+                    </label>
+                </div>
+
+
+                <div class="form-group">
+                    <p>Laboratorios</p>
+                    <select name="nombres" class="nombre__option">
+                        <option disabled selected value>Seleciona una opción</option>
+                        <option value="Lab1">Lab Anatomia C#1</option>
+                        <option value="Lab2"disabled>Laboratorio C#2</option>
+                        <option value="Lab3">Labo Qímica C#3</option>
+                        <option value="Lab4"disabled>Laboratorio C#4</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group-modif">
+                
+                <div class="form-group">
+                    <label>
+                        <input type="radio"class="Selecion2"type="text" checked> Paralelo B
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p>Laboratorios</p>
+                    <select name="nombres" class="nombre__option">
+                        <option disabled selected value>Seleciona una opción</option>
+                        <option value="Lab1">Lab Anatomia C#1</option>
+                        <option value="Lab2"disabled>Laboratorio C#2</option>
+                        <option value="Lab3">Lab Qímica C#3</option>
+                        <option value="Lab4"disabled>Laboratorio C#4</option>
+                    </select>
+                </div>
+
+            </div>
+            <!-- otra seccion -->
+            <div class="form--group">
+                <div class="form-group">
+                    <!-- <p>Paralelos Asigados</p>
+                    <label>
+                        <input type="radio"class="Selecion"type="text"> Paralelo A
+                    </label>
+                    <label>
+                        <input type="radio"class="Selecion"type="text"> Paralelo B
+                    </label>
+                
+                    <p>
+                        Horario de uso
+                    
+                    </p> -->
+                
+                    <p>Jornada Paralelo A</p>
+                    <select name="nombres" class="nombre__option">
+                        <option disabled selected value>Seleciona una opción</option>
+                        <option value="Lab1" selected>Matutina</option>
+                        <option value="Lab2"disabled>Vespertina</option>
+                        <option value="Lab3" disabled>Nocturna</option>
+                    </select>
+                
+                </div>
+                
+                <div class="form-group">
+                    <!-- <p>Paralelos Asigados</p>
+                    <label>
+                        <input type="radio"class="Selecion"type="text"> Paralelo A
+                    </label>
+                    <label>
+                        <input type="radio"class="Selecion"type="text"> Paralelo B
+                    </label>
+                
+                
+                    <p>
+                        Horario de uso
+                    </p> -->
+                
+                    <p>Jornada Paralelo B</p>
+                    <select name="nombres" class="nombre__option">
+                        <option disabled selected value>Seleciona una opción</option>
+                        <option value="Lab1"selected>Matutina</option>
+                        <option value="Lab2" disabled>Vespertina</option>
+                        <option value="Lab3"disabled>Nocturna</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Tiempo de duración de la Reserva</p>
+                <select name="nombres" class="nombre__option">
+                    <option disabled selected value>Seleciona una opción</option>
+                    <option value="Lab1">1 Semana</option>
+                    <option value="Lab1">2 Semanas</option>
+                    <option value="Lab2">3 Semanas</option>
+                    <option value="Lab3">18 Semanas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button class="button">Reservar</button>
+            </div>
+        </form>
+
+    </seccion>
+
+    <seccion class="grid">
+        <div class="table__container">
+            <div class="table__title">Horario de Reserva de Laboratorio 🏢</div>
+            <div class="table__header">Lunes</div>
+            <div class="table__header">Martes</div>
+            <div class="table__header">Miércoles</div> 
+            <div class="table__header">Jueves</div>
+            <div class="table__header">Viernes</div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle" disabled>
+                <label for="toggle" id="boton">8:00 a 9:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle1">
+                <label for="toggle1" id="boton2">8:00 a 9:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle2">
+                <label for="toggle2" id="boton3">8:00 a 9:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle3">
+                <label for="toggle3" id="boton4">8:00 a 9:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle4" disabled>
+                <label for="toggle4" id="boton5">8:00 a 9:00</label>
+            </div>
+            <!-- Hora fila 2 -->
+            <div class="table__items">
+                <input type="checkbox" id="toggle5">
+                <label for="toggle5" id="boton6">9:00 a 10:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle6" disabled>
+                <label for="toggle6" id="boton7">9:00 a 10:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle7">
+                <label for="toggle7" id="boton8">9:00 a 10:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle8" disabled>
+                <label for="toggle8" id="boton9">9:00 a 10:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle9">
+                <label for="toggle9" id="boton10">9:00 a 10:00</label>
+            </div>
+            <!-- Hora fila 3 -->
+            <div class="table__items">
+                <input type="checkbox" id="toggle10">
+                <label for="toggle10" id="boton11">10:00 a 11:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle11">
+                <label for="toggle11" id="boton12">10:00 a 11:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle12" disabled>
+                <label for="toggle12" id="boton13">10:00 a 11:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle13">
+                <label for="toggle13" id="boton14">10:00 a 11:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle14">
+                <label for="toggle14" id="boton15">10:00 a 11:00</label>
+            </div>
+            <!-- hora fila 4 -->
+            <div class="table__items">
+                <input type="checkbox" id="toggle15">
+                <label for="toggle15" id="boton16">11:00 a 12:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle16" disabled>
+                <label for="toggle16" id="boton17">11:00 a 12:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle17">
+                <label for="toggle17" id="boton18">11:00 a 12:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle18" disabled>
+                <label for="toggle18" id="boton19">11:00 a 12:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle19">
+                <label for="toggle19" id="boton20">11:00 a 12:00</label>
+            </div>
+            <!-- Hora fila 5 -->
+            <div class="table__items">
+                <input type="checkbox" id="toggle20" disabled>
+                <label for="toggle20" id="boton21">12:00 a 13:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle21">
+                <label for="toggle21" id="boton22">12:00 a 13:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle22">
+                <label for="toggle22" id="boton23">12:00 a 13:00</label>
+            </div>
+            <div class="table__items">
+                <input type="checkbox" id="toggle23">
+                <label for="toggle23" id="boton24">12:00 a 13:00</label>
+            </div>
+            <div class="table__items" >
+                <input type="checkbox" id="toggle24" disabled>
+                <label for="toggle24" id="boton25">12:00 a 13:00</label>
+            </div>
+        </div>
+    </seccion>
+</body>
+</html>
